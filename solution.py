@@ -9,6 +9,5 @@ def solution(x: np.array) -> float:
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
     t = 67
-    e = sts.laplace().rvs(len(x))
-    a = (x - e)/t**2
+    a = 2*(x - 1)/t**2
     return a.mean() # Ваш ответ
